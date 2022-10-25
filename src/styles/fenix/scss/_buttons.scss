@@ -1,0 +1,314 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  color: $body-color;
+  text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
+  white-space: $btn-white-space;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  min-height: $input-height;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  @include hover() {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+
+    &:active,
+    &.active {
+      @include box-shadow($btn-active-box-shadow);
+
+      &:focus {
+        @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      }
+    }
+  }
+
+  &.caret {
+    &:after {
+      content: "\F107";
+      @include icon;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in;
+      transition-delay: 0s;
+    }
+  }
+
+  &.btn-lg {
+    &.caret {
+      &:after {
+        font-size: $h3-font-size;
+      }
+    }
+  }
+
+  &.justify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  &.active {
+    &.caret {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $font-weight-bolder;
+  color: theme-color($key: "primary");
+  text-decoration: $link-decoration;
+  padding: 0;
+  min-height: auto;
+
+  @include hover() {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  &.text-dark {
+    &:hover {
+      color: theme-color($key: "primary") !important;
+    }
+  }
+
+  // No need for an active state here
+
+  &.btn-sm {
+    padding: 0;
+    min-height: auto;
+    font-size: $font-size-xs;
+  }
+}
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  height: 50px;
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $btn-font-size-lg,
+    $btn-line-height-lg,
+    $btn-border-radius
+  );
+}
+
+.btn-sm {
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $btn-font-size-sm,
+    $btn-line-height-sm,
+    $btn-border-radius-sm
+  );
+}
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+//Custom added
+.btn-transparent {
+  border-radius: 0;
+}
+
+.btn-outline-primary {
+  background-color: $white;
+}
+.btn-outline-light {
+  color: theme-color($key: "dark");
+  border-color: theme-color($key: "dark");
+  font-weight: $font-weight-normal;
+
+  &.dropdown-toggle {
+    &:not(:disabled):not(.disabled):active,
+    &:hover {
+      color: theme-color($key: "dark");
+      border-color: theme-color($key: "dark");
+      box-shadow: none;
+    }
+  }
+}
+.show {
+  .btn-outline-light {
+    &.dropdown-toggle {
+      color: theme-color($key: "dark");
+      border-color: theme-color($key: "dark");
+      box-shadow: none;
+      background-color: $white;
+
+      &:not(:disabled):not(.disabled):active,
+      &:hover {
+        color: theme-color($key: "dark");
+        border-color: theme-color($key: "dark");
+        box-shadow: none;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: $h3-font-size;
+    font-weight: $font-weight-normal;
+  }
+
+  &.active {
+    i {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.btn-general {
+  color: theme-color($key: "dark");
+
+  &:hover {
+    color: theme-color($key: "primary");
+  }
+
+  i {
+    width: 18px;
+    font-weight: $font-weight-normal;
+    margin-right: 0.5rem
+  }
+}
+.btn-width {
+  min-width: 180px;
+  display: inline-flex;
+}
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 35px;
+  background-color: $gray-200;
+  border-radius: $border-radius;
+
+  &::after {
+    @include icon;
+    font-weight: $font-weight-light;
+    font-size: $h2-font-size;
+  }
+
+  &:hover {
+    background-color: $gray-300;
+  }
+
+  &.prev {
+    &::after {
+      content: "\f104";
+    }
+  }
+
+  &.next {
+    &::after {
+      content: "\f105";
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+  }
+}

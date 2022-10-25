@@ -1,0 +1,60 @@
+.orders-layout-outer {
+    padding-bottom: 4rem;
+    min-height: $body-height;
+}
+
+.orders-body {
+    padding-top: 1.5rem;
+}
+
+.status-text {
+    padding: 0.35rem 0.5rem;
+    min-width: 120px;
+    text-align: center;
+    border-radius: $border-radius;
+}
+.dropdown-custom{
+    .dropdown-toggle{
+        min-height: 35px !important;
+    }
+}
+
+.grid-col {
+    display: flex;
+    flex-wrap: wrap;
+
+    > [class*="col"] {
+        background-color: $white;
+    }
+
+    &.grid-4 {
+        > [class*="col"] {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: $white;
+            border-bottom: 1px solid theme-color($key: "light");
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            @include media-breakpoint-between(sm, md) {
+                border-right: 1px solid theme-color($key: "light");
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    border-right: 0;
+                }
+
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                border-right: 1px solid theme-color($key: "light");
+                border-bottom: 0;
+            }
+        }
+    }
+}

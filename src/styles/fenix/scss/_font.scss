@@ -1,0 +1,1356 @@
+@mixin adobe {
+  font-family: "adobe";
+}
+
+@mixin arctic {
+  font-family: "arctic";
+  src: url("/fonts/fjallraven/arctic-fox-regular.woff2") format("woff2"),
+    url("/fonts/fjallraven/arctic-fox-regular.woff") format("woff"),
+    url("/fonts/fjallraven/arctic-fox-regular.ttf") format("opentype"),
+    url("/fonts/fjallraven/arctic-fox-regular.eot") format("eot");
+}
+
+@mixin arctic-bold {
+  font-family: "arctic-bold";
+  src: url("/fonts/fjallraven/arctic-fox-bold.woff2") format("woff2"),
+    url("/fonts/fjallraven/arctic-fox-bold.woff") format("woff"),
+    url("/fonts/fjallraven/arctic-fox-bold.ttf") format("opentype"),
+    url("/fonts/fjallraven/arctic-fox-bold.eot") format("eot");
+}
+
+@mixin arctic-bolder {
+  font-family: "arctic-bolder";
+  src: url("/fonts/fjallraven/arctic-fox-headline.woff2") format("woff2"),
+    url("/fonts/fjallraven/arctic-fox-headline.woff") format("woff"),
+    url("/fonts/fjallraven/arctic-fox-headline.ttf") format("opentype"),
+    url("/fonts/fjallraven/arctic-fox-headline.eot") format("eot");
+}
+
+@mixin arctic-italic {
+  font-family: "arctic-italic";
+  src: url("/fonts/fjallraven/arctic-fox-italic.woff2") format("woff2"),
+    url("/fonts/fjallraven/arctic-fox-italic.woff") format("woff"),
+    url("/fonts/fjallraven/arctic-fox-italic.ttf") format("opentype"),
+    url("/fonts/fjallraven/arctic-fox-italic.eot") format("eot");
+}
+
+@mixin caecilia {
+  font-family: "caecilia";
+  src: url("/fonts/hanwag/caecilia-ltstd-roman.woff2") format("woff2"),
+    url("/fonts/fjallraven/caecilia-ltstd-roman.woff") format("woff"),
+    url("/fonts/fjallraven/caecilia-ltstd-roman.ttf") format("opentype");
+}
+
+@mixin caecilia-bold {
+  font-family: "caecilia-bold";
+  src: url("/fonts/hanwag/caecilia-ltstd-bold.woff2") format("woff2"),
+    url("/fonts/fjallraven/caecilia-ltstd-bold.woff") format("woff"),
+    url("/fonts/fjallraven/caecilia-ltstd-bold.ttf") format("opentype");
+}
+
+@mixin caecilia-bolder {
+  font-family: "caecilia-bolder";
+  src: url("/fonts/hanwag/caecilia-ltstd-heavy.woff2") format("woff2"),
+    url("/fonts/fjallraven/caecilia-ltstd-heavy.woff") format("woff"),
+    url("/fonts/fjallraven/caecilia-ltstd-heavy.ttf") format("opentype");
+}
+
+@mixin caecilia-light {
+  font-family: "caecilia-light";
+  src: url("/fonts/hanwag/caecilia-ltstd-light.woff2") format("woff2"),
+    url("/fonts/fjallraven/caecilia-ltstd-light.woff") format("woff"),
+    url("/fonts/fjallraven/caecilia-ltstd-light.ttf") format("opentype");
+}
+
+@mixin gotham {
+  font-family: "gotham";
+  src: url("/fonts/hanwag/gotham-condensed-book.woff2") format("woff2"),
+    url("/fonts/fjallraven/gotham-condensed-book.woff") format("woff"),
+    url("/fonts/fjallraven/gotham-condensed-book.ttf") format("opentype");
+}
+
+@mixin gotham-bold {
+  font-family: "gotham-bold";
+  src: url("/fonts/hanwag/gotham-condensed-medium.woff2") format("woff2"),
+    url("/fonts/fjallraven/gotham-condensed-medium.woff") format("woff"),
+    url("/fonts/fjallraven/gotham-condensed-medium.ttf") format("opentype");
+}
+
+@mixin gotham-light {
+  font-family: "gotham-light";
+  src: url("/fonts/hanwag/gotham-condensed-light.woff2") format("woff2"),
+    url("/fonts/fjallraven/gotham-condensed-light.woff") format("woff"),
+    url("/fonts/fjallraven/gotham-condensed-light.ttf") format("opentype");
+}
+
+@mixin hanwag {
+  font-family: "hanwag";
+  src: url("/fonts/hanwag/hanwagvol1.woff2") format("woff2"),
+    url("/fonts/fjallraven/hanwagvol1.woff") format("woff"),
+    url("/fonts/fjallraven/hanwagvol1.ttf") format("opentype");
+}
+
+@mixin helvetica {
+  font-family: "helvetica";
+  src: url("/fonts/hanwag/helvetica.woff2") format("woff2"),
+    url("/fonts/fjallraven/helvetica.woff") format("woff"),
+    url("/fonts/fjallraven/helvetica.ttf") format("opentype");
+}
+
+@mixin knockout {
+  font-family: "knockout";
+  src: url("/fonts/hanwag/knockout-50-welterweight.woff2") format("woff2"),
+    url("/fonts/fjallraven/knockout-50-welterweight.woff") format("woff"),
+    url("/fonts/fjallraven/knockout-50-welterweight.ttf") format("opentype");
+}
+
+@mixin minion {
+  font-family: "minion";
+  src: url("/fonts/hanwag/minion-pro-regular.woff2") format("woff2"),
+    url("/fonts/fjallraven/minion-pro-regular.woff") format("woff"),
+    url("/fonts/fjallraven/minion-pro-regular.ttf") format("opentype");
+}
+
+@mixin wingdings {
+  font-family: "wingdings";
+  src: url("/fonts/hanwag/wingdings-2.woff2") format("woff2"),
+    url("/fonts/fjallraven/wingdings-2.woff") format("woff"),
+    url("/fonts/fjallraven/wingdings-2.ttf") format("opentype");
+}
+
+@mixin primus-sans-black {
+  font-family: "primus-sans-black";
+  src: url("/fonts/primus/primus-sans-black.woff2") format("woff2"),
+    url("/fonts/primus/primus-sans-black.woff") format("woff"),
+    url("/fonts/primus/primus-sans-black.ttf") format("opentype");
+}
+
+@mixin primus-sans-light {
+  font-family: "primus-sans-light";
+  src: url("/fonts/primus/primus-sans-light.woff2") format("woff2"),
+    url("/fonts/primus/primus-sans-light.woff") format("woff"),
+    url("/fonts/primus/primus-sans-light.ttf") format("opentype");
+}
+
+@mixin akkurat {
+  font-family: "akkurat";
+  src: url("/fonts/royalrobbins/akkurat.woff2") format("woff2"),
+    url("/fonts/royalrobbins/akkurat.woff") format("woff"),
+    url("/fonts/royalrobbins/akkurat.ttf") format("opentype");
+}
+
+@mixin akkurat-bold {
+  font-family: "akkurat-bold";
+  src: url("/fonts/royalrobbins/akkurat-bold.woff2") format("woff2"),
+    url("/fonts/royalrobbins/akkurat-bold.woff") format("woff"),
+    url("/fonts/royalrobbins/akkurat-bold.ttf") format("opentype");
+}
+
+@mixin akkurat-light {
+  font-family: "akkurat-light";
+  src: url("/fonts/royalrobbins/akkurat-light.woff2") format("woff2"),
+    url("/fonts/royalrobbins/akkurat-light.woff") format("woff"),
+    url("/fonts/royalrobbins/akkurat-light.ttf") format("opentype");
+}
+
+@mixin trade-gothic-lt-bold-oblique {
+  font-family: "trade-gothic-lt-bold-oblique";
+  src: url("/fonts/royalrobbins/trade-gothic-lt-bold-oblique.woff2") format("woff2"),
+    url("/fonts/royalrobbins/trade-gothic-lt-bold-oblique.woff") format("woff"),
+    url("/fonts/royalrobbins/trade-gothic-lt-bold-oblique.ttf") format("opentype");
+}
+
+
+@mixin trade-gothic-lt-condensed {
+  font-family: "trade-gothic-lt-condensed";
+  src: url("/fonts/royalrobbins/trade-gothic-lt-condensed.woff2") format("woff2"),
+    url("/fonts/royalrobbins/trade-gothic-lt-condensed.woff") format("woff"),
+    url("/fonts/royalrobbins/trade-gothic-lt-condensed.ttf") format("opentype");
+}
+
+@mixin trade-gothic-lt-condensed-oblique {
+  font-family: "trade-gothic-lt-condensed-oblique";
+  src: url("/fonts/royalrobbins/trade-gothic-lt-condensed-oblique.woff2") format("woff2"),
+    url("/fonts/royalrobbins/trade-gothic-lt-condensed-oblique.woff") format("woff"),
+    url("/fonts/royalrobbins/trade-gothic-lt-condensed-oblique.ttf") format("opentype");
+}
+
+@mixin trade-gothic-lt-bold-condensed {
+  font-family: "trade-gothic-lt-bold-condensed";
+  src: url("/fonts/royalrobbins/trade-gothic-lt-bold-condensed.woff2") format("woff2"),
+    url("/fonts/royalrobbins/trade-gothic-lt-bold-condensed.woff") format("woff"),
+    url("/fonts/royalrobbins/trade-gothic-lt-bold-condensed.ttf") format("opentype");
+}
+
+@mixin trade-gothic-lt-std {
+  font-family: "trade-gothic-lt-std";
+  src: url("/fonts/royalrobbins/trade-gothic-lt-std.woff2") format("woff2"),
+    url("/fonts/royalrobbins/trade-gothic-lt-std.woff") format("woff"),
+    url("/fonts/royalrobbins/trade-gothic-lt-std.ttf") format("opentype");
+}
+
+/* default fonts */
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G3JoY14IUql-.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G3JoY1wIUql-.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G3JoY1MIUg.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0oMImSLYBIv1o4X1M8cce4E91Kdmwp.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0oMImSLYBIv1o4X1M8cce4E9ZKdmwp.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0oMImSLYBIv1o4X1M8cce4E9lKdg.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4GwZuY1cIUql-.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4GwZuY1wIUql-.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4GwZuY1MIUg.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G2JvY1cIUql-.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G2JvY1wIUql-.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G2JvY1MIUg.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G35sY1cIUql-.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G35sY1wIUql-.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe01MImSLYBIv1o4X1M8cce4G35sY1MIUg.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8WAc5pU1EQVg.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8WAc5iU1EQVg.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8WAc5tU1E.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc9iB85pU1EQVg.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc9iB85iU1EQVg.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8GBs5pU1EQVg.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8GBs5iU1EQVg.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8aBc5pU1EQVg.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8aBc5iU1EQVg.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pe03MImSLYBIv1o4X1M8cc8aBc5tU1E.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofIMeaBXso.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofIOuaBXso.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofINeaB.woff2") format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofIMeaBXso.woff2") format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofIOuaBXso.woff2") format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/XRXV3I6Li01BKofINeaB.woff2") format('woff2');
+}
+
+@font-face {
+  @include arctic;
+  @include regular;
+}
+
+@font-face {
+  @include arctic-italic;
+  @include regular-italic;
+}
+
+@font-face {
+  @include arctic-bold;
+  @include bold;
+}
+
+@font-face {
+  @include arctic-bolder;
+  @include bolder;
+}
+
+@font-face {
+  @include adobe;
+  @include regular;
+}
+
+@font-face {
+  @include caecilia-light;
+  @include light;
+}
+
+@font-face {
+  @include caecilia;
+  @include regular;
+}
+
+@font-face {
+  @include caecilia-bold;
+  @include bold;
+}
+
+@font-face {
+  @include caecilia-bolder;
+  @include bolder;
+}
+
+@font-face {
+  @include gotham-light;
+  @include light;
+}
+
+@font-face {
+  @include gotham;
+  @include regular;
+}
+
+@font-face {
+  @include gotham-bold;
+  @include bold;
+}
+
+@font-face {
+  @include hanwag;
+  @include regular;
+}
+
+@font-face {
+  @include helvetica;
+  @include regular;
+}
+
+@font-face {
+  @include knockout;
+  @include regular;
+}
+
+@font-face {
+  @include minion;
+  @include regular;
+}
+
+@font-face {
+  @include wingdings;
+  @include regular;
+}
+
+@font-face {
+  @include primus-sans-black;
+  @include regular;
+}
+
+@font-face {
+  @include primus-sans-light;
+  @include regular;
+}
+
+@font-face {
+  @include akkurat;
+  @include regular;
+}
+
+@font-face {
+  @include akkurat-bold;
+  @include regular;
+}
+
+@font-face {
+  @include akkurat-light;
+  @include regular;
+}
+
+@font-face {
+  @include trade-gothic-lt-bold-oblique;
+  @include regular;
+}
+
+@font-face {
+  @include trade-gothic-lt-condensed;
+  @include regular;
+}
+
+@font-face {
+  @include trade-gothic-lt-condensed-oblique;
+  @include regular;
+}
+
+@font-face {
+  @include trade-gothic-lt-bold-condensed;
+  @include regular;
+}
+
+@font-face {
+  @include trade-gothic-lt-std;
+  @include regular;
+}
+
+$font-1: "adobe";
+$font-2: "arctic";
+$font-3: "arctic-bold";
+$font-4: "arctic-bolder";
+$font-5: "arctic-italic";
+$font-6: "caecilia";
+$font-7: "caecilia-bold";
+$font-8: "caecilia-bolder";
+$font-9: "caecilia-light";
+$font-10: "gotham";
+$font-11: "gotham-bold";
+$font-12: "gotham-light";
+$font-13: "hanwag";
+$font-14: "helvetica";
+$font-15: "knockout";
+$font-16: "minion";
+$font-17: "wingdings";
+$font-18: "primus-sans-black";
+$font-19: "primus-sans-light";
+$font-20: "akkurat";
+$font-21: "akkurat-bold";
+$font-22: "akkurat-light";
+$font-23: "trade-gothic-lt-bold-oblique";
+$font-24: "trade-gothic-lt-condensed";
+$font-25: "trade-gothic-lt-condensed-oblique";
+$font-26: "primus-sans-light";
+$font-27: "primus-sans-black";
+$font-28: "trade-gothic-lt-bold-condensed";
+$font-29: "trade-gothic-lt-std";
+
+/* Body */
+/* font style for text */
+.font-1 {
+  .content {
+    font-family: $font-1  !important;
+  }
+}
+
+.font-2 {
+  .content {
+    font-family: $font-2  !important;
+  }
+}
+
+.font-3 {
+  .content {
+    font-family: $font-3  !important;
+  }
+}
+
+.font-4 {
+  .content {
+    font-family: $font-4  !important;
+  }
+}
+
+.font-5 {
+  .content {
+    font-family: $font-5  !important;
+  }
+}
+
+.font-6 {
+  .content {
+    font-family: $font-6  !important;
+  }
+}
+
+.font-7 {
+  .content {
+    font-family: $font-7  !important;
+  }
+}
+
+.font-8 {
+  .content {
+    font-family: $font-8  !important;
+  }
+}
+
+.font-9 {
+  .content {
+    font-family: $font-9  !important;
+  }
+}
+
+.font-10 {
+  .content {
+    font-family: $font-10  !important;
+  }
+}
+
+.font-11 {
+  .content {
+    font-family: $font-11  !important;
+  }
+}
+
+.font-12 {
+  .content {
+    font-family: $font-12  !important;
+  }
+}
+
+.font-13 {
+  .content {
+    font-family: $font-13  !important;
+  }
+}
+
+.font-14 {
+  .content {
+    font-family: $font-14  !important;
+  }
+}
+
+.font-15 {
+  .content {
+    font-family: $font-15  !important;
+  }
+}
+
+.font-16 {
+  .content {
+    font-family: $font-16  !important;
+  }
+}
+
+.font-17 {
+  .content {
+    font-family: $font-17  !important;
+  }
+}
+
+.font-18 {
+  .content {
+    font-family: $font-18  !important;
+  }
+}
+
+.font-19 {
+  .content {
+    font-family: $font-19  !important;
+  }
+}
+
+.font-20 {
+  .content {
+    font-family: $font-20  !important;
+  }
+}
+
+.font-21 {
+  .content {
+    font-family: $font-21  !important;
+  }
+}
+
+.font-22 {
+  .content {
+    font-family: $font-22  !important;
+  }
+}
+
+.font-23 {
+  .content {
+    font-family: $font-23  !important;
+  }
+}
+
+.font-24 {
+  .content {
+    font-family: $font-24  !important;
+  }
+}
+
+.font-25 {
+  .content {
+    font-family: $font-25  !important;
+  }
+}
+
+.font-26 {
+  .content {
+    font-family: $font-26  !important;
+  }
+}
+
+.font-27 {
+  .content {
+    font-family: $font-27  !important;
+  }
+}
+
+.font-28 {
+  .content {
+    font-family: $font-28  !important;
+  }
+}
+
+.font-29 {
+  .content {
+    font-family: $font-29  !important;
+  }
+}
+
+/* font size text */
+.fs-12 {
+  .content {
+    font-size: $font-size-xs  !important;
+  }
+}
+
+.fs-14 {
+  .content {
+    font-size: $font-size-sm  !important;
+  }
+}
+
+.fs-16 {
+  .content {
+    font-size: $font-size-base  !important;
+  }
+}
+
+.fs-18 {
+  .content {
+    font-size: $font-size-lg  !important;
+  }
+}
+
+.fs-20 {
+  .content {
+    font-size: $h4-font-size  !important;
+  }
+}
+
+.fs-24 {
+  .content {
+    font-size: $h3-font-size  !important;
+  }
+}
+
+.fs-32 {
+  .content {
+    font-size: $h2-font-size  !important;
+  }
+}
+
+.fs-40 {
+  .content {
+    font-size: $h1-font-size  !important;
+  }
+}
+
+/* Heading */
+/* font style for heading text */
+.font-1-head {
+  .heading {
+    font-family: $font-1  !important;
+  }
+}
+
+.font-2-head {
+  .heading {
+    font-family: $font-2  !important;
+  }
+}
+
+.font-3-head {
+  .heading {
+    font-family: $font-3  !important;
+  }
+}
+
+.font-4-head {
+  .heading {
+    font-family: $font-4  !important;
+  }
+}
+
+.font-5-head {
+  .heading {
+    font-family: $font-5  !important;
+  }
+}
+
+.font-6-head {
+  .heading {
+    font-family: $font-6  !important;
+  }
+}
+
+.font-7-head {
+  .heading {
+    font-family: $font-7  !important;
+  }
+}
+
+.font-8-head {
+  .heading {
+    font-family: $font-8  !important;
+  }
+}
+
+.font-9-head {
+  .heading {
+    font-family: $font-9  !important;
+  }
+}
+
+.font-10-head {
+  .heading {
+    font-family: $font-10  !important;
+  }
+}
+
+.font-11-head {
+  .heading {
+    font-family: $font-11  !important;
+  }
+}
+
+.font-12-head {
+  .heading {
+    font-family: $font-12  !important;
+  }
+}
+
+.font-13-head {
+  .heading {
+    font-family: $font-13  !important;
+  }
+}
+
+.font-14-head {
+  .heading {
+    font-family: $font-14  !important;
+  }
+}
+
+.font-15-head {
+  .heading {
+    font-family: $font-15  !important;
+  }
+}
+
+.font-16-head {
+  .heading {
+    font-family: $font-16  !important;
+  }
+}
+
+.font-17-head {
+  .heading {
+    font-family: $font-17  !important;
+  }
+}
+
+.font-18-head {
+  .heading {
+    font-family: $font-18  !important;
+  }
+}
+
+.font-19-head {
+  .heading {
+    font-family: $font-19  !important;
+  }
+}
+
+.font-20-head {
+  .heading {
+    font-family: $font-20  !important;
+  }
+}
+
+.font-21-head {
+  .heading {
+    font-family: $font-21  !important;
+  }
+}
+
+.font-22-head {
+  .heading {
+    font-family: $font-22  !important;
+  }
+}
+
+.font-23-head {
+  .heading {
+    font-family: $font-23  !important;
+  }
+}
+
+.font-24-head {
+  .heading {
+    font-family: $font-24  !important;
+  }
+}
+
+.font-25-head {
+  .heading {
+    font-family: $font-25  !important;
+  }
+}
+
+.font-26-head {
+  .heading {
+    font-family: $font-26  !important;
+  }
+}
+
+.font-27-head {
+  .heading {
+    font-family: $font-27  !important;
+  }
+}
+
+.font-28-head {
+  .heading {
+    font-family: $font-28  !important;
+  }
+}
+
+.font-29-head {
+  .heading {
+    font-family: $font-29  !important;
+  }
+}
+
+/* font size for heading text */
+.fs-12-head {
+  .heading {
+    font-size: $font-size-xs  !important;
+  }
+}
+
+.fs-14-head {
+  .heading {
+    font-size: $font-size-sm  !important;
+  }
+}
+
+.fs-16-head {
+  .heading {
+    font-size: $font-size-base  !important;
+  }
+}
+
+.fs-18-head {
+  .heading {
+    font-size: $font-size-lg  !important;
+  }
+}
+
+.fs-20-head {
+  .heading {
+    font-size: $h4-font-size  !important;
+  }
+}
+
+.fs-24-head {
+  .heading {
+    font-size: $h3-font-size  !important;
+  }
+}
+
+.fs-32-head {
+  .heading {
+    font-size: $h2-font-size  !important;
+  }
+}
+
+.fs-40-head {
+  .heading {
+    font-size: $h1-font-size  !important;
+  }
+}
+
+.fs-58-head {
+  .heading {
+    font-size: $h1-font-size  !important;
+  }
+}
+
+/* Sub heading */
+/* font style for sub heading text */
+.font-1-subhead {
+  .sub-heading {
+    font-family: $font-1  !important;
+  }
+}
+
+.font-2-subhead {
+  .sub-heading {
+    font-family: $font-2  !important;
+  }
+}
+
+.font-3-subhead {
+  .sub-heading {
+    font-family: $font-3  !important;
+  }
+}
+
+.font-4-subhead {
+  .sub-heading {
+    font-family: $font-4  !important;
+  }
+}
+
+.font-5-subhead {
+  .sub-heading {
+    font-family: $font-5  !important;
+  }
+}
+
+.font-6-subhead {
+  .sub-heading {
+    font-family: $font-6  !important;
+  }
+}
+
+.font-7-subhead {
+  .sub-heading {
+    font-family: $font-7  !important;
+  }
+}
+
+.font-8-subhead {
+  .sub-heading {
+    font-family: $font-8  !important;
+  }
+}
+
+.font-9-subhead {
+  .sub-heading {
+    font-family: $font-9  !important;
+  }
+}
+
+.font-10-subhead {
+  .sub-heading {
+    font-family: $font-10  !important;
+  }
+}
+
+.font-11-subhead {
+  .sub-heading {
+    font-family: $font-11  !important;
+  }
+}
+
+.font-12-subhead {
+  .sub-heading {
+    font-family: $font-12  !important;
+  }
+}
+
+.font-13-subhead {
+  .sub-heading {
+    font-family: $font-13  !important;
+  }
+}
+
+.font-14-subhead {
+  .sub-heading {
+    font-family: $font-14  !important;
+  }
+}
+
+.font-15-subhead {
+  .sub-heading {
+    font-family: $font-15  !important;
+  }
+}
+
+.font-16-subhead {
+  .sub-heading {
+    font-family: $font-16  !important;
+  }
+}
+
+.font-17-subhead {
+  .sub-heading {
+    font-family: $font-17  !important;
+  }
+}
+
+.font-18-subhead {
+  .sub-heading {
+    font-family: $font-18  !important;
+  }
+}
+
+.font-19-subhead {
+  .sub-heading {
+    font-family: $font-19  !important;
+  }
+}
+
+.font-20-subhead {
+  .sub-heading {
+    font-family: $font-20  !important;
+  }
+}
+
+.font-21-subhead {
+  .sub-heading {
+    font-family: $font-21  !important;
+  }
+}
+
+.font-22-subhead {
+  .sub-heading {
+    font-family: $font-22  !important;
+  }
+}
+
+.font-23-subhead {
+  .sub-heading {
+    font-family: $font-23  !important;
+  }
+}
+
+.font-24-subhead {
+  .sub-heading {
+    font-family: $font-24  !important;
+  }
+}
+
+.font-25-subhead {
+  .sub-heading {
+    font-family: $font-25  !important;
+  }
+}
+
+.font-27-subhead {
+  .sub-heading {
+    font-family: $font-27  !important;
+  }
+}
+
+.font-28-subhead {
+  .sub-heading {
+    font-family: $font-28  !important;
+  }
+}
+
+.font-29-subhead {
+  .sub-heading {
+    font-family: $font-29  !important;
+  }
+}
+
+/* font size for sub heading text */
+.fs-12-subhead {
+  .sub-heading {
+    font-size: $font-size-xs  !important;
+  }
+}
+
+.fs-14-subhead {
+  .sub-heading {
+    font-size: $font-size-sm  !important;
+  }
+}
+
+.fs-16-subhead {
+  .sub-heading {
+    font-size: $font-size-base  !important;
+  }
+}
+
+.fs-18-subhead {
+  .sub-heading {
+    font-size: $font-size-lg  !important;
+  }
+}
+
+.fs-20-subhead {
+  .sub-heading {
+    font-size: $h4-font-size  !important;
+  }
+}
+
+.fs-24-subhead {
+  .sub-heading {
+    font-size: $h3-font-size  !important;
+  }
+}
+
+.fs-32-subhead {
+  .sub-heading {
+    font-size: $h2-font-size  !important;
+  }
+}
+
+.fs-40-subhead {
+  .sub-heading {
+    font-size: $h1-font-size  !important;
+  }
+}

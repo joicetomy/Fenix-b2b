@@ -1,0 +1,1 @@
+require('./src/styles/fenix/scss/main.scss');

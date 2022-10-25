@@ -1,0 +1,106 @@
+.pre-order-bar{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color :#FFFFFF;
+  .pre-order-text{
+    display: flex;
+    font-weight: $font-weight-bold;
+    padding-right: 5px;
+  }
+  .pre-order-link{
+    margin-left: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.pre-order-btn {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 8px;
+  margin: 2px ;
+  background-color: theme-color($key: "light");
+  height: 32px;
+
+  .pre-order-btn-item {
+     min-width: 130px;
+  }
+
+  .pre-order-btn-divider {
+      content: '';
+      width: 1px;
+      flex: 0 0 1px;
+      margin: 0 3px;
+      height: 26px;
+      background-color: lighten($black, 80%);
+  }
+
+  .btn {
+      border-radius: 8px;
+      font-size: $font-size-sm;
+      min-height: 27px;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      a{
+        color: inherit;
+      }
+  }
+
+  .btn-primary {
+      &:not(:disabled):not(.disabled).active {
+          background-color: theme-color($key: "primary");
+          border-color: theme-color($key: "primary");
+      }
+      &:not(.active) {
+          background-color: transparent;
+          border-color: transparent;
+          color: theme-color($key: "silver");
+          font-weight: $font-weight-base;
+      }
+      &.disabled{
+        background-color: theme-color($key: "light-smoke") !important;
+        border-color: theme-color($key: "light-smoke") !important;
+      }
+  }
+}
+.pre-order-modal{
+  width: 50%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  .modal-content{
+    padding: 10px;
+    .pre-order-modal-header{
+      font-weight :$font-weight-bold !important
+    }
+    .loader-outer {
+      display: flex;
+      justify-content: center;
+      min-height: 200px;
+      align-items: center;
+    }
+    .pre-order-modal-body{
+      text-align: center;
+      white-space: pre-line;
+    }
+    .pre-order-modal-footer{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      .btn{
+        width: 25%;
+      } 
+      @include media-breakpoint-down(md) {
+        .btn{
+          width: 40%;
+        }
+      }
+    }
+  }
+}

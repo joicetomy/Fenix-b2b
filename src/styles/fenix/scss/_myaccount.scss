@@ -1,0 +1,96 @@
+.myaccount-layout-outer {
+  min-height: auto;
+
+  @include media-breakpoint-up(md) {
+    min-height: $body-height-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: $body-height-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    min-height: $body-height;
+  }
+
+  .myaccount-header {
+    padding: 1.5rem;
+    border-bottom: $border-width solid $border-color;
+
+    @include media-breakpoint-down(sm) {
+      padding: 1rem;
+    }
+
+    .myaccount-header-title {
+      @include headings {
+        font-size: $font-size-lg;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .myaccount-body {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.profile-data {
+  .profile-data-top {
+    text-align: right;
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 1rem;
+    }
+  }
+
+  .profile-data-content {
+    background-color: $white;
+    overflow: hidden;
+  }
+}
+
+.data-table-list {
+  li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-bottom: $border-width solid $border-color;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background-color: lighten($black, 99%);
+    }
+
+    .data-table-title {
+      width: 30%;
+      flex: 0 0 30%;
+      color: theme-color($key: "blue-tint");
+
+      @include media-breakpoint-down(sm) {
+        width: 40%;
+        flex: 0 0 40%;
+      }
+    }
+
+    .data-table-text {
+      width: 70%;
+      flex: 0 0 70%;
+      padding-left: 1rem;
+
+      @include media-breakpoint-down(sm) {
+        width: 6%;
+        flex: 0 0 60%;
+      }
+    }
+  }
+}

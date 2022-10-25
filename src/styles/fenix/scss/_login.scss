@@ -1,0 +1,338 @@
+.login-layout-outer {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+
+  &:after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: theme-color($key: "light-smoke");
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.login-header {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  text-align: center;
+  z-index: 10;
+
+  .login-header-content {
+    margin: 0 auto;
+    padding: 1rem 2rem 2rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 2rem;
+    }
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+.login-panel {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 42px;
+  z-index: 20;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    border-radius: 0;
+    max-width: 100%;
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  .login-panel-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    .login-title {
+      font-weight: $font-weight-bolder;
+      font-size: $h2-font-size;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-down(sm) {
+        font-size: $h3-font-size;
+      }
+
+      i {
+        margin-right: 0.5rem;
+        color: theme-color($key: "green");
+        font-size: $h3-font-size;
+
+        @include media-breakpoint-down(sm) {
+          font-size: $font-size-lg;
+        }
+      }
+    }
+
+    .login-subtitle {
+      font-size: $font-size-lg;
+      margin-bottom: 0;
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  .login-panel-form {
+    width: 100%;
+    max-width: 342px;
+    margin: 0 auto;
+
+    .btn-link {
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+
+.login-alert {
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.login-footer {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: flex-end;
+  z-index: 10;
+  color: lighten($dark, 50%);
+  text-align: center;
+
+  &.login-no-flex {
+    flex: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-color: theme-color($key: "light-smoke");
+    align-items: center;
+  }
+
+  .login-footer-links {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 1rem;
+    }
+
+    span {
+      margin: 0 0.25rem;
+    }
+  }
+}
+
+// Styles for sub account
+.subaccount-layout-outer {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.subaccount-header {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 10;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  .subaccount-header-content {
+    padding: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 2rem;
+      margin: 0 auto;
+    }
+  }
+
+  .logo {
+    padding-top: 4rem;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.subaccount-panel {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 11;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  .subaccount-panel-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .subaccount-title {
+      font-weight: $font-weight-bold;
+      font-size: $h2-font-size;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-down(sm) {
+        font-size: $h3-font-size;
+      }
+    }
+  }
+}
+
+.subaccount-select {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .subaccount-item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 33.3333%;
+    }
+
+    .subaccount-item-picture {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 1rem;
+      background-color: theme-color($key: "dark-snow");
+      border: 2px solid $border-color;
+      border-radius: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.25rem;
+      font-family: $font-family-secondary;
+      font-weight: $font-weight-bold;
+      transition: $transition-base;
+
+      @include media-breakpoint-down(sm) {
+        width: 150px;
+        height: 150px;
+        font-size: $h1-font-size;
+      }
+    }
+
+    .subaccount-item-title {
+      font-weight: $font-weight-bold;
+      font-size: $h3-font-size;
+    }
+
+    &:hover {
+      .subaccount-item-picture {
+        border: 2px solid theme-color($key: "primary");
+        box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.05);
+        background-color: lighten($dark-snow, 50%);
+      }
+
+      .subaccount-item-title {
+        color: theme-color($key: "primary");
+      }
+    }
+
+    &.active {
+      .subaccount-item-picture {
+        border: 2px solid theme-color($key: "primary");
+      }
+
+      .subaccount-item-title {
+        color: theme-color($key: "primary");
+      }
+    }
+  }
+
+  .dropdown.dropdown-custom {
+    .dropdown-menu {
+      padding: 0.5rem 0 0.25rem;
+    }
+  }
+}
+
+.subaccount-footer {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  z-index: 10;
+  color: lighten($dark, 50%);
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    background-color: theme-color($key: "light-smoke");
+    align-items: center;
+  }
+
+  .subaccount-footer-content {
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin: 0 auto;
+    font-size: $font-size-lg;
+  }
+
+}
+
+.login-password-field {
+  position: relative;
+}
+
+.login-password-visibility {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.error {
+  border-color: theme-color($key: "danger");
+}

@@ -1,0 +1,95 @@
+.help-layout-outer {
+    .help-header-outer {
+        padding: 2rem 1rem;
+
+        .media {
+            width: 100%;
+            max-width: 740px;
+            margin: 0 auto;
+            align-items: center;
+            font-size: $font-size-lg;
+
+            @include media-breakpoint-down(xs) {
+                flex-direction: column;
+            }
+
+            .media-left {
+                margin-right: 2.5rem;
+
+                @include media-breakpoint-down(xs) {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    margin-right: 0;
+                }
+            }
+
+            .media-object {
+                max-width: 160px;
+                border-radius: 100%;
+                border: $border-width solid $border-color;
+
+                @include media-breakpoint-down(xs) {
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+            }
+
+            .media-heading {
+                font-size: $h2-font-size;
+                margin-bottom: 0.25rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .help-search-outer {
+        background-color: theme-color($key: "dark-snow");
+        padding: 2.5rem 1rem;
+
+        .help-search-col {
+            width: 100%;
+            max-width: 545px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .help-body-outer {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2.5rem 1rem 4rem;
+
+        .help-body-title {
+            font-size: $font-size-lg;
+        }
+    }
+
+    .help-collapse-outer {
+        li {
+            margin-bottom: 0.25rem;
+
+            .btn {
+                word-break: break-word;
+                height: auto;
+                font-weight: $font-weight-normal;
+
+                &:after {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        .card-body {
+            font-size: $font-size-sm;
+            padding: 1rem;
+        }
+    }
+}

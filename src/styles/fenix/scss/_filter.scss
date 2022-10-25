@@ -1,0 +1,108 @@
+.filter-outer {
+    background-color: theme-color($key: "dark-snow");
+    padding: 1.5rem;
+    flex-grow: 1;
+
+    .filter-title {
+        font-size: $h4-font-size;
+        font-weight: $font-weight-bolder;
+    }
+    .filter-subtitle {
+        font-size: $font-size-base;
+        font-weight: $font-weight-bolder;
+        margin: 0;
+    }
+    .filter-collapse {
+        .form-group {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .btn-link {
+            margin-top: 0.5rem;
+        }
+    }
+    .filter-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.75rem;
+
+        &.two-col {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .filter-item {
+                width: 50%;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .filter-item {
+            width: 100%;
+            margin-bottom: 0.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .filter-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        &:after {
+            content: "\F107";
+            @include icon;
+            font-size: $font-size-lg;
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+        }
+
+        &.active {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.switch-btn {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 8px;
+    background-color: theme-color($key: "light-smoke");
+
+    .switch-btn-item {
+        width: 100%;
+    }
+
+    .switch-btn-divider {
+        content: '';
+        width: 1px;
+        flex: 0 0 1px;
+        margin: 0 3px;
+        height: 26px;
+        background-color: lighten($black, 80%);
+    }
+
+    .btn {
+        border-radius: 8px;
+        font-size: $font-size-sm;
+    }
+
+    .btn-primary {
+        &:not(:disabled):not(.disabled).active {
+            background-color: theme-color($key: "primary");
+            border-color: theme-color($key: "primary");
+        }
+        &:not(.active) {
+            background-color: transparent;
+            border-color: transparent;
+            color: theme-color($key: "silver");
+        }
+    }
+}

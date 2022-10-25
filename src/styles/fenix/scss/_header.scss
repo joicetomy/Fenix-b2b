@@ -1,0 +1,336 @@
+.nav-top {
+  background-color: theme-color($key: "light-smoke");
+}
+
+.nav-top-list {
+  display: flex;
+  align-items: center;
+
+  li {
+    @include media-breakpoint-down(sm) {
+      border-right: $border-width solid theme-color($key: "extra-dark-snow");
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  .btn {
+    font-weight: $font-weight-bold;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  .nav-top-link {
+    border-radius: 0;
+    font-weight: $font-weight-bold;
+    padding: 0.5rem 1rem;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.3rem 0.5rem;
+      font-size: $font-size-sm;
+    }
+
+    &:hover {
+      background-color: theme-color($key: "dark-snow");
+    }
+  }
+
+  .dropdown {
+    &.show {
+      .nav-top-link {
+        background-color: theme-color($key: "dark-snow");
+      }
+    }
+
+    .dropdown-menu {
+      background-color: theme-color($key: "dark-snow");
+      z-index: 1050;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      min-width: 200px;
+      margin: 0;
+
+      .dropdown-item {
+        @include media-breakpoint-down(sm) {
+          padding: 0.5rem 1rem;
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+}
+
+.header-outer {
+  @include media-breakpoint-up(xl) {
+    height: $header-height;
+  }
+}
+
+.header-fixed {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+header {
+  position: relative;
+
+  .brand-outer {
+    align-items: center;
+    display: flex;
+
+    @include media-breakpoint-up(md) {
+      order: 1;
+      padding-left: 1.5rem;
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      text-align: center;
+      order: 3;
+      justify-content: center;
+    }
+  }
+
+  .nav-outer {
+    position: static !important;
+
+    &.desktop {
+      order: 2;
+
+      @include media-breakpoint-down(lg) {
+        order: 4;
+        background-color: $gray-200;
+        border-bottom: 1px solid $border-color;
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+
+      @include media-breakpoint-between(xl, xxl) {
+        padding-right: 0;
+      }
+    }
+
+    &.mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      i {
+        font-size: $h3-font-size;
+      }
+
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+  }
+
+  .search-mobile {
+    margin-left: 0.5rem;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  .nav-search-outer {
+    @include media-breakpoint-up(md) {
+      order: 3;
+      width: 100%;
+      max-width: 230px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      padding-left: 1.5rem;
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+      max-width: 195px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-width: 260px;
+    }
+
+    .search-list {
+      width: 400px;
+    }
+  }
+
+  .nav-right-outer {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    order: 4;
+
+    @include media-breakpoint-down(lg) {
+      order: 3;
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+      padding-left: 0;
+    }
+
+    .nav-item {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      padding: 0 0.5rem;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0 0.25rem;
+      }
+
+      .btn {
+        padding: 0.5rem 0.5rem;
+        height: $header-height;
+        font-weight: $font-weight-bold;
+
+        @include media-breakpoint-down(lg) {
+          padding: 0.25rem;
+        }
+
+        @include media-breakpoint-between(xl, xxl) {
+          padding: 0.5rem 0.25rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          padding: 0.5rem 0.75rem;
+        }
+
+        span {
+          display: none;
+
+          @include media-breakpoint-up(md) {
+            display: block;
+          }
+        }
+      }
+
+      svg {
+        width: 32px;
+
+        @include media-breakpoint-up(md) {
+          width: 24px;
+          margin-right: 0.15rem;
+        }
+      }
+
+      &.hidden-md {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          display: flex;
+        }
+      }
+
+      &.btn-cart {
+        @include media-breakpoint-down(lg) {
+          border-left: 1px solid $border-color;
+          margin-left: 0.5rem;
+          padding-left: 0.5rem;
+          height: $header-height;
+        }
+
+        @include media-breakpoint-down(sm) {
+          padding-right: 0;
+        }
+      }
+
+      &.active {
+        @include media-breakpoint-up(lg) {
+          .nav-link {
+            box-shadow: inset 0px -3px 0px theme-color($key: "primary");
+          }
+
+          .dropdown {
+            box-shadow: inset 0px -3px 0px theme-color($key: "primary");
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      font-size: $font-size-base;
+      font-weight: $font-weight-bold;
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      padding: 0;
+      height: 100%;
+
+      i {
+        margin-left: 0.25rem;
+
+        @include media-breakpoint-up(lg) {
+          margin-left: 0;
+          margin-right: 0.25rem;
+        }
+      }
+
+      span {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          display: block;
+        }
+      }
+    }
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .dropdown-menu {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      margin: 0;
+    }
+  }
+}
+
+.brand-menu-outer {
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  justify-content: end;
+
+  .brand-menu-item {
+    margin-right: 2rem;
+
+    .brand-logo {
+      max-width: 70px;
+      max-height: 35px;
+      padding: 5px 0;
+      opacity: 0.5;
+      cursor: pointer;
+
+      &.active {
+        opacity: 1;
+        cursor: default;
+      }
+    }
+  }
+}

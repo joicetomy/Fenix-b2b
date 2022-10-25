@@ -1,0 +1,127 @@
+footer {
+  border-top: $border-width solid $white;
+}
+
+.newsletter-outer {
+  text-align: center;
+
+  .subtext {
+    font-size: $font-size-lg;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    .form-control {
+      border-color: theme-color($key: "light-smoke");
+    }
+
+    .btn {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.copyright {
+  background-color: theme-color($key: "light-smoke");
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xs;
+  margin-top: 24px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 15px;
+  background-color: theme-color($key: "light-smoke");
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+
+  .social-media-item {
+    margin-right: 1rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0.5rem;
+    }
+
+    .social-media-link {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: theme-color($key: "primary");
+      }
+    }
+
+    .social-media-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border-radius: 20px;
+      margin-right: 0.5rem;
+
+      svg,
+      img {
+        width: 100%;
+      }
+    }
+
+    i {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+footer {
+  .social-media {
+    @include media-breakpoint-down(sm) {
+      .social-media-item {
+        width: 50%;
+        flex: 0 0 50%;
+        margin-right: 0;
+
+        &:first-child {
+          width: 10%;
+          flex: 0 0 100%;
+          text-align: center;
+          font-weight: $font-weight-bold;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.footer-links {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid theme-color($key: "dark-smoke");
+  }
+}

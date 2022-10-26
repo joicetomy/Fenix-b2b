@@ -31,9 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: page.slug.current,
       component: staticPageTemplate,
-      context: {
-        slug: page,
-      },
+      context: {page},
     })
   })
 }

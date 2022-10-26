@@ -16,7 +16,6 @@ const BannerCarouselAlpha = props => {
     items,
     parentId,
   } = props;
-  console.log(items, "bannercarousel");
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const next = () => {

@@ -19,7 +19,7 @@ const staticPage = context => {
         <Container>
           <Row>
             <Col xs='12' className='static-body'>
-              <BlockContent data={context?.pageContext?.page?._rawPageData?.richTextBox} />
+              <BlockContent data={context?.pageContext?.page?._rawPageData} />
             </Col>
           </Row>
         </Container>

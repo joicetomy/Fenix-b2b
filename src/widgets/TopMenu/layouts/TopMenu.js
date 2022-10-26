@@ -18,7 +18,6 @@ const TopMenu = (props) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => {
-    console.log("hereeeee");
     setModalOpen(!isModalOpen);
   };
   return (

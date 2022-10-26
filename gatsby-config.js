@@ -1,4 +1,6 @@
 const path = require('path');
+const { sanity} = config;
+
 module.exports = {
   siteMetadata: {
     title: `Fenix-b2b`,
@@ -7,9 +9,7 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-sanity',
     options: {
-      "projectId": "kh46fyba",
-      "dataset": "production",
-      "useCdn": false,
+      ...sanity
     }
     
   },

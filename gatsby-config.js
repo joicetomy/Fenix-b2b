@@ -1,4 +1,6 @@
 const path = require('path');
+const config = require('./src/config/config');
+
 const { sanity} = config;
 
 module.exports = {

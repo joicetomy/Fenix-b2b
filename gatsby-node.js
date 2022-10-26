@@ -10,17 +10,10 @@ exports.createPages = async ({ graphql, actions }) => {
     query {
       allSanityStaticPage {
         nodes {
-          _id
-          slug {
-            current
-          }
-          pageData {
-            _key
-            _type
-            style
-            list
-            _rawChildren
-          }
+          id
+          name
+          _rawPageData
+          _rawSlug
         }
       }
     }
@@ -29,7 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const pages = result.data.allSanityStaticPage.nodes;
   pages.forEach((page) => {
     createPage({
-      path: page.slug.current,
+      path: page._rawSlug.current,
       component: staticPageTemplate,
       context: {page},
     })

@@ -15,7 +15,7 @@ const MainMenuContainer = props => {
   `);
   useEffect(()=>{
     setContents(sanityHeader)
-  },[sanityHeader])
+  },[sanityHeader,sanityHeader?._rawCategories,sanityHeader?._rawBrandLogo,sanityHeader?._rawHeaderLabel])
   return (
     <MainMenu
     categories={contents?._rawCategories}

@@ -21,7 +21,7 @@ const TopMenuContainer = props => {
 
   useEffect(() => { 
     setContents(sanityHeader);
-  },[sanityHeader])
+  },[sanityHeader,sanityHeader?._rawHeaderLabel,sanityHeader?._rawCatalogTabs])
 
   return (
     (

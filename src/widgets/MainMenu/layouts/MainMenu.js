@@ -19,7 +19,7 @@ import DropdownToggle from '@core/DropdownToggle';
 
 const MainMenu = props => {
 
-  const { categories, logo ,contents} = props;
+  const { categories, logo, contents } = props;
   const [isOpen, updateIsOpen] = useState(false);
 
 
@@ -45,8 +45,9 @@ const MainMenu = props => {
               </Col>
               <Col md='auto' className='nav-search-outer'>
                 <div className='search-field icon-left'>
-                  <DebounceInput 
-                  placeholder={contents?.searchLabel}
+                  <DebounceInput
+                    className='form-control content'
+                    placeholder={contents?.searchLabel}
                   />
                   <i className='fal fa-search' role='button' aria-label='Search' />
                 </div>
@@ -71,7 +72,7 @@ const MainMenu = props => {
                       </DropdownToggle>
                       <DropdownMenu right className='content'>
                         <DropdownItem id='header-csv-upload' >{contents?.orderMenu?.csvUpload}</DropdownItem>
-                        <DropdownItem id='header-view-orders' onClick={() => {}}>{contents?.orderMenu?.viewAllOrders}</DropdownItem>
+                        <DropdownItem id='header-view-orders' onClick={() => { }}>{contents?.orderMenu?.viewAllOrders}</DropdownItem>
                       </DropdownMenu>
                     </Dropdown>
                   </NavItem>
@@ -81,7 +82,7 @@ const MainMenu = props => {
                     </Link>
                   </NavItem>
                 </Nav>
-            </Col>
+              </Col>
             </Row>
           </Container>
         </header>

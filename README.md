@@ -1,3 +1,3 @@
-To run the application
-npm i
-npm start
+To run the application <br />
+npm i <br />
+npm start <br />
